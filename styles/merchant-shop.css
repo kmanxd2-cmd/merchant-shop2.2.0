@@ -1,0 +1,110 @@
+
+.merchant-shop-dialog .window-content {
+  padding: 0.75rem;
+}
+.merchant-shop {
+  min-width: 420px;
+  max-width: 680px;
+}
+.merchant-shop .ms-header {
+  display:flex;
+  align-items:center;
+  padding: .75rem;
+  border-bottom: 1px solid var(--color-border-light-2);
+  margin-bottom: .5rem;
+}
+.merchant-shop h2 { margin: 0; }
+.merchant-shop p { margin: .2rem 0 0; opacity: .7; }
+.ms-search-wrap { margin-bottom: .5rem; }
+.ms-search {
+  width: 100%;
+  padding: .45rem .6rem;
+}
+.ms-items {
+  display:flex;
+  flex-direction:column;
+  gap:.4rem;
+  max-height: 55vh;
+  overflow:auto;
+}
+.ms-item {
+  display:grid;
+  grid-template-columns: 42px 1fr auto;
+  gap:.6rem;
+  align-items:center;
+  padding:.45rem;
+  border:1px solid var(--color-border-light-2);
+  border-radius:6px;
+  background: rgba(0,0,0,.04);
+}
+.ms-item img {
+  width:42px;
+  height:42px;
+  object-fit:cover;
+  border-radius:4px;
+}
+.ms-item-name { font-weight:700; }
+.ms-item-meta { font-size:.9em; opacity:.75; }
+.ms-buy { min-width:60px; }
+.ms-empty {
+  text-align:center;
+  padding:2rem 1rem;
+  opacity:.7;
+}
+.ms-confirm {
+  display:flex;
+  align-items:center;
+  gap:1rem;
+}
+.ms-confirm img {
+  width:56px;
+  height:56px;
+  object-fit:cover;
+}
+.merchant-shop-toggle.active i {
+  color: var(--color-warm-2, #ff9900);
+}
+.merchant-shop-manage-dialog p {
+  margin: 0 0 .5rem;
+  opacity: .8;
+}
+.ms-manage-item {
+  display:grid;
+  grid-template-columns: auto 42px 1fr;
+  gap:.6rem;
+  align-items:center;
+  padding:.45rem;
+  border:1px solid var(--color-border-light-2);
+  border-radius:6px;
+  background: rgba(0,0,0,.04);
+  cursor: pointer;
+}
+.ms-manage-item input[type="checkbox"] {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: 0;
+}
+
+.merchant-shop .ms-item {
+  transition: opacity 120ms ease, transform 120ms ease;
+}
+.merchant-shop .ms-item[hidden] {
+  display: none;
+}
+.merchant-shop .ms-buy {
+  min-width: 72px;
+  cursor: pointer;
+}
+.merchant-shop .ms-buy:disabled {
+  cursor: not-allowed;
+  opacity: .55;
+}
+.merchant-shop .ms-buy.is-busy {
+  opacity: .7;
+}
+.merchant-shop .ms-buy i {
+  margin-right: .2rem;
+}
+
+.merchant-shop .ms-buy-funds-low { opacity: .9; }
+.merchant-shop .ms-buy-funds-low::after { content: ""; }
