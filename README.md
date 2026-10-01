@@ -1,6 +1,6 @@
-# Merchant Shop 2.2.0
+# Merchant Shop 2.2.2
 
-Standalone Merchant Shop for Foundry VTT v14 + D&D 5e 5.3.3.
+Standalone Merchant Shop for Foundry VTT v14 (verified on build 368) + D&D 5e 5.3.3.
 
 ## Standalone design
 
